@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+    <div class="container">
+        <div class="navbar">
+            <div class="navbar-input">
+                <input type="text" name="city" id="input_city" placeholder="enter name of city">
+                <button type="button" id="searchbtn" ><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+                <button type="button" id="locbtn"><i class="fa-solid fa-location-crosshairs"></i>Current Location</button>
+            </div>
+        </div>
+    </div>
+    <div class="weather-data">
+        <div class="weather-left">
+            <div class="card">
+                <div class="currentweather">
+                    <div class="details">
+                        <h2>____&deg;C</h2>
+                        <p>______________</p>
+                    </div>
+                    <div class="weather-icon">
+                        <img src="http://openweathermap.org/img/wn/04n@2x.png" alt="">
+                    </div>
+                </div>
+            </div> 
+            <div class="card">
+                <div class="loc">
+                    <div class="date">
+                        <h2>Date and Location</h2>
+                        <hr>
+                        <p><i class="fa-regular fa-calendar"></i>______</p>
+                        <p><i class="fa-solid fa-location-dot"></i>______</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hourlyforecast">
+                <div class="card">
+                    <p>9 AM</p>
+                    <img src="http://openweathermap.org/img/wn/04d.png" alt="">
+                    <p>____&deg;C</p>
+                </div>
+                <div class="card">
+                    <p>9 AM</p>
+                    <img src="http://openweathermap.org/img/wn/04d.png" alt="">
+                    <p>____&deg;C</p>
+                </div>
+                <div class="card">
+                    <p>9 AM</p>
+                    <img src="http://openweathermap.org/img/wn/04d.png" alt="">
+                    <p>____&deg;C</p>
+                </div>
+                <div class="card">
+                    <p>9 AM</p>
+                    <img src="http://openweathermap.org/img/wn/04d.png" alt="">
+                    <p>____&deg;C</p>
+                </div>
+            </div>
+        </div>
+        <div class="weather-right">
+            <div class="highlights">
+                <div class="card">
+                    <div class="currentforecast">
+                    <div class="card-header">
+                       <h4><i class="fa-regular fa-calendar"></i> 5 day forecast</h4>
+                       <hr>
+                    </div>
+                    <div class="dayforecast">
+                        <p>____</p>
+                        <p>____</p>
+                        <h3>____&deg;</h3>
+                        <img src="http://openweathermap.org/img/wn/02d@2x.png" alt="">
+                    </div>
+                    <div class="dayforecast">
+                        <p>____</p>
+                        <p>____</p>
+                        <h3>____&deg;</h3>
+                        <img src="http://openweathermap.org/img/wn/02d@2x.png" alt="">
+                    </div>
+                    <div class="dayforecast">
+                        <p>____</p>
+                        <p>____</p>
+                        <h3>____&deg;</h3>
+                        <img src="http://openweathermap.org/img/wn/02d@2x.png" alt="">
+                    </div>
+                    <div class="dayforecast">
+                        <p>____</p>
+                        <p>____</p>
+                        <h3>____&deg;</h3>
+                        <img src="http://openweathermap.org/img/wn/02d@2x.png" alt="">
+                    </div>
+                    <div class="dayforecast">
+                        <p>____</p>
+                        <p>____</p>
+                        <h3>____&deg;</h3>
+                        <img src="http://openweathermap.org/img/wn/02d@2x.png" alt="">
+                    </div>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="sunrise">
+                        <h2>Sunrise & Sunset</h2>
+                        <h3><i class="fa-regular fa-sun"></i> Sunrise</h3>
+                        <p>__________</p>
+                        <h3><i class="fa-regular fa-moon"></i> Sunset</h3>
+                        <p>__________</p>
+                        </div>
+                </div>
+                <div class="card1">
+                    <h2><i class="fa-solid fa-wind"></i> Wind Speed</h2>
+                    <h3 id="windspeedVal"><i class="fa-solid fa-location-arrow"></i> ________m/s </h3>
+                </div>
+                <div class="card1">
+                    <h2><i class="fa-solid fa-droplet"></i> Humidity</h2>
+                    <h3 id="humidityVal"> ________%</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
