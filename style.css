@@ -21,7 +21,7 @@ body{
     padding: 15px 0;
     & #input_city{
         border: none;
-        border-radius: 25px 0px 0px 25px;
+        border-radius: 25px;
         font-size: 16px;
         padding: 12px;
         background-color: #3b3b3b;
@@ -29,7 +29,7 @@ body{
     }
     & #searchbtn{
         border: none;
-        border-radius: 0px 25px 25px 0px;
+        border-radius: 25px;
         font-size: 16px;
         padding: 12px;
         background-color: #3b3b3b;
@@ -96,7 +96,7 @@ body{
     padding: 15px;
     margin: 15px;
     border-radius: 20px;
-    height: 100px;
+    width: 270px;
     & h2{
         text-align: center;
         border-bottom: 1px solid #fff;
@@ -106,5 +106,13 @@ body{
         display: inline;
         margin: 7px;
         padding-top: 5px;
+    }
+}
+@media (max-width: 800px) {
+    .navbar{
+        flex-direction: column;
+    }
+    .weather-data{
+    grid-template-columns: 1fr;
     }
 }

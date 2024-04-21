@@ -46,9 +46,9 @@ function getWeatherDetails(name, lat, lon, country, state){
         sunriseCard.innerHTML = `
         <div class="sunrise">
             <h2>Sunrise & Sunset</h2>
-            <h3><i class="fa-regular fa-sun"></i> Sunrise</h3>
+            <h3><i class="fa-regular fa-sun"></i></h3>
             <p>${sRiseTime}</p>
-            <h3><i class="fa-regular fa-moon"></i> Sunset</h3>
+            <h3><i class="fa-regular fa-moon"></i></h3>
             <p>${sSetTime}</p>
         </div>
         `;
@@ -108,7 +108,7 @@ function getWeatherDetails(name, lat, lon, country, state){
             <hr>
          </div>
          `;
-        for(i=1; i< fivedaysForecast.length; i++){
+        for(i=0; i< fivedaysForecast.length; i++){
             let date = new Date(fivedaysForecast[i].dt_txt);
             fiveDaysForecastCard.innerHTML += `
             
