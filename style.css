@@ -113,6 +113,11 @@ body{
         flex-direction: column;
     }
     .weather-data{
-    grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        & .dayforecast{
+            width: 180px;
+        }
     }
 }
