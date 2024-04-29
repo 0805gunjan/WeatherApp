@@ -108,7 +108,7 @@ function getWeatherDetails(name, lat, lon, country, state){
             <hr>
          </div>
          `;
-        for(i=0; i< fivedaysForecast.length; i++){
+        for(i=1; i< fivedaysForecast.length; i++){
             let date = new Date(fivedaysForecast[i].dt_txt);
             fiveDaysForecastCard.innerHTML += `
             
